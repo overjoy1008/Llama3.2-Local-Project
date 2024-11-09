@@ -1,4 +1,8 @@
+import os
 import torch
+
+# Set the environment variable to disable the upper limit for memory allocations
+os.environ["PYTORCH_MPS_HIGH_WATERMARK_RATIO"] = "0.0"
 
 # GPU 사용 여부 확인
 if torch.backends.mps.is_available():

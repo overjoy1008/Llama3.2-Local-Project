@@ -25,10 +25,6 @@ model = MllamaForConditionalGeneration.from_pretrained(
     device_map="auto",
     # device_map="cuda"  # Uncomment this line if you want to force all parts of the model to be on GPU
 )
-
-# Tie Weights (optional)
-model.tie_weights()
-
 processor = AutoProcessor.from_pretrained(model_path)
 
 # Open the image

@@ -17,8 +17,8 @@ from PIL import Image
 import requests
 
 # Update the paths to use relative paths with Assets directory
-model_path = "./Assets/Models"
-image_path = "./Assets/Images/mathProblem2.png"
+model_path = "Assets/Models/llama_3_2_11B_instruct"
+image_path = "Assets/Images/mathProblem2.png"
 
 # Initialize model and processor
 model = MllamaForConditionalGeneration.from_pretrained(

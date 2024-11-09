@@ -14,7 +14,6 @@
   <img width="609" alt="스크린샷 2024-11-09 오후 1 03 35" src="https://github.com/user-attachments/assets/1ac42b53-3124-401b-ba23-0e9c81b77805">
 - For MAC users, type in the terminal `source .venv/bin/activate` to enter venv, and `deactivate` to exit.
 - For WINDOWS users, type in the terminal `.venv\Scripts\activate` to enter venv, and `deactivate` to exit.
-- *You may need to have c++ installed in order to install pytorch*
 
 ## 3. How to Manually install from requirements.txt / Download new packages
 - Make sure you activated venv (Image Below)
@@ -26,6 +25,9 @@
     <img width="685" alt="스크린샷 2024-11-09 오후 1 23 47" src="https://github.com/user-attachments/assets/4ac3b185-14c9-4930-ac08-c9d330fd1fea">
 - `pip install -r requirements.txt` will let you install all the packages in the requirements.txt
 - `pip freeze > requirements.txt` will update the newly downloaded package to requirements.txt
+- For WINDOWS users, you must use Pytorch CUDA by:
+  1. `pip uninstall torch torchvision torchaudio`
+  2. `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124` (*You may need to have c++ installed in order to install pytorch*)
 
 ## 4. Using Dotenv for Security
 - Your .gitignore should look like this:

@@ -39,7 +39,7 @@ messageDataStructure = [
             {"type": "image"},
             {
                 "type": "text",
-                "text": "What is in the picture?",
+                "text": "Compute the side of c of the triangle in the image.",
             },
         ],
     }

@@ -14,6 +14,7 @@
   <img width="609" alt="스크린샷 2024-11-09 오후 1 03 35" src="https://github.com/user-attachments/assets/1ac42b53-3124-401b-ba23-0e9c81b77805">
 - For MAC users, type in the terminal `source .venv/bin/activate` to enter venv, and `deactivate` to exit.
 - For WINDOWS users, type in the terminal `.venv\Scripts\activate` to enter venv, and `deactivate` to exit.
+- *You may need to have c++ installed in order to install pytorch*
 
 ## 3. How to Manually install from requirements.txt / Download new packages
 - Make sure you activated venv (Image Below)

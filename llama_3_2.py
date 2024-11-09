@@ -4,19 +4,19 @@ from PIL import Image
 import requests
 
 # Update the paths to use relative paths with Assets directory
-model_id = "Assets/Models"
-imageName = "Assets/Images/mathProblem2.JPG"
+model_path = "./Assets/Models"
+image_path = "./Assets/Images/mathProblem2.png"
 
 # Initialize model and processor
 model = MllamaForConditionalGeneration.from_pretrained(
-    model_id,
+    model_path,
     torch_dtype=torch.bfloat16,
     device_map="auto",
 )
-processor = AutoProcessor.from_pretrained(model_id)
+processor = AutoProcessor.from_pretrained(model_path)
 
 # Open the image
-image = Image.open(imageName)
+image = Image.open(image_path)
 
 # Create a message data structure
 messageDataStructure = [
